@@ -4,7 +4,7 @@
 #include "StudentConfiguration.h"
 #ifdef COMPILE_EXERCICE_1
 
-float Solution1::result = 0.0f;
+float Solution1::result = 0.00f;
 float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, TemperatureUnits _to)
 {
 	result = _value;
@@ -16,18 +16,18 @@ float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, Temper
 		}
 		else if (_to == TemperatureUnits::FAHRENHEIT)
 		{
-			result = 9 / 5 * (_value - 273.15) + 32;
+			result = 9.00 / 5.00 * (_value - 273.15) + 32.00;
 		}
 	}
 	else if (_from == TemperatureUnits::FAHRENHEIT)
 	{
 		if (_to == TemperatureUnits::CELSIUS)
 		{
-			result = 5 / 9 * (_value - 32);
+			result = 5.00 / 9.00 * (_value - 32.00);
 		}
 		else if (_to == TemperatureUnits::KELVIN)
 		{
-			result = 5 / 9 * (_value - 32) + 273.15;
+			result = 5.00 / 9.00 * (_value - 32.00) + 273.15;
 		}
 	}
 	else if (_from == TemperatureUnits::CELSIUS)
@@ -38,7 +38,7 @@ float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, Temper
 		}
 		else if (_to == TemperatureUnits::FAHRENHEIT)
 		{
-			result = 9 / 5 * _value + 32;
+			result = 9.00 / 5.00 * _value + 32.00;
 		}
 	}
 
