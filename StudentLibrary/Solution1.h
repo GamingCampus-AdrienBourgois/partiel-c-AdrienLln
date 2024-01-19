@@ -15,6 +15,7 @@ class Solution1 // Temperature converter
 {
 public:
 	static float ConvertTemperature(float _value, TemperatureUnits _from, TemperatureUnits _to);
+	static float result;
 };
 
 #endif
