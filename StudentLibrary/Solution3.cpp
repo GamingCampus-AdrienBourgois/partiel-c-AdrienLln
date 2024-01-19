@@ -1,5 +1,6 @@
 #include "Solution3.h"
 #include <algorithm>
+#include <stdexcept>
 
 // Don't fortget to enable the exercise in the SudentConfiguration.h file !
 #include "StudentConfiguration.h"
@@ -12,6 +13,10 @@ void Solution3::SetWords(const std::vector<std::string>& _words)
 
 void Solution3::SortWords() 
 {
+	if (words.empty()) {
+		// Lancez une exception si la liste est vide
+		throw std::runtime_error("La liste est vide. Impossible de la trier.");
+	}
 	std::sort(words.begin(), words.end());
 
 }
