@@ -16,6 +16,7 @@ public:
 
 private:
 	std::vector<std::string> words;
+	static bool CaseInsensitiveCompare(const std::string& a, const std::string& b);
 };
 
 #endif

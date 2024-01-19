@@ -9,17 +9,6 @@
 #include "StudentConfiguration.h"
 #ifdef COMPILE_EXERCICE_3
 
-class Solution3 {
-public:
-	void SetWords(const std::vector<std::string>& _words);
-	void SortWords();
-	std::vector<std::string> GetSortedWords() const;
-
-private:
-	static bool CaseInsensitiveCompare(const std::string& a, const std::string& b);
-	std::vector<std::string> words;
-};
-
 void Solution3::SetWords(const std::vector<std::string>& _words)
 {
 	words = _words;
