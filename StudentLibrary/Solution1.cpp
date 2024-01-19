@@ -7,6 +7,7 @@
 float Solution1::result = 0.0f;
 float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, TemperatureUnits _to)
 {
+	result = _value;
 	if (_from == TemperatureUnits::KELVIN)
 	{
 		if (_to == TemperatureUnits::CELSIUS)
